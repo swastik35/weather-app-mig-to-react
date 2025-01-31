@@ -32,5 +32,10 @@ const Icons = (props) => {
       <img src={require("../weather_icons/sun.png")} className="weatherIcon" />
     );
   }
+  if (props.iconList == "Fog"|props.iconList == "Mist") {
+    return (
+      <img src={require("../weather_icons/fog.png")} className="weatherIcon" />
+    );
+  }
 };
 export default Icons;
